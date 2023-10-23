@@ -10,4 +10,5 @@ create table if not exists partperorder(
      part_id bigint not null,
      part_quantity bigint not null
 );
+create sequence partperoerder_seq;
 create sequence order_seq;
