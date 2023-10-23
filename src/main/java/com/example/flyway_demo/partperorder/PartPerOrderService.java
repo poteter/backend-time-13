@@ -13,5 +13,7 @@ public class PartPerOrderService {
         this.partPerOrderRepository = partPerOrderRepository;
     }
 
-    public
+    public PartPerOrder getPartPerOrderById(Long id){
+        return partPerOrderRepository.findById(id).orElse(null);
+    }
 }
